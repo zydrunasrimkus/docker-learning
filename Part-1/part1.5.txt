@@ -1,0 +1,26 @@
+# SIZE COMPARISON
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago   15.7MB
+
+# apk update
+# apk add coreutils
+# docker exec -it great_chatelet tail -f ./text.log
+
+2024-06-05 23:12:15 +0000 UTC
+2024-06-05 23:12:17 +0000 UTC
+2024-06-05 23:12:19 +0000 UTC
+2024-06-05 23:12:21 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-05 23:12:23 +0000 UTC
+2024-06-05 23:12:25 +0000 UTC
+2024-06-05 23:12:27 +0000 UTC
+2024-06-05 23:12:29 +0000 UTC
+2024-06-05 23:12:31 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-05 23:12:33 +0000 UTC
+2024-06-05 23:12:35 +0000 UTC
+2024-06-05 23:12:37 +0000 UTC
+2024-06-05 23:12:39 +0000 UTC
+2024-06-05 23:12:41 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
