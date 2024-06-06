@@ -1,9 +1,3 @@
-FROM ubuntu:22.04
+FROM devopsdockeruh/simple-web-service:alpine
 
-WORKDIR /usr/src/app
-
-RUN apt-get -y update; apt-get -y install curl
-
-COPY script.sh .
-
-CMD ./script.sh
+CMD server
