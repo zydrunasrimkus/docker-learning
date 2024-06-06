@@ -1,3 +1,9 @@
-FROM python:3.11
-ENTRYPOINT ["python3"]
-CMD ["--help"]
+FROM ubuntu:22.04
+
+WORKDIR /usr/src/app
+
+RUN apt-get -y update; apt-get -y install curl
+
+COPY script.sh .
+
+ENTRYPOINT [ "./script.sh" ]
