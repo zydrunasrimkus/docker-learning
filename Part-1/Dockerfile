@@ -1,3 +1,3 @@
-FROM devopsdockeruh/simple-web-service:alpine
-
-CMD server
+FROM python:3.11
+ENTRYPOINT ["python3"]
+CMD ["--help"]
