@@ -1,0 +1,13 @@
+#DOCKERFILE
+FROM nginx:latest
+
+EXPOSE 80
+EXPOSE 443
+
+CMD ["nginx", "-g", "daemon off;"]
+
+#WHAT I DID
+I have oracle cloud and domain. I created docker image on my local pc machine which is designed for arm cpus and uploaded it to docker hub. I then installed docker on my ubuntu system and ran docker image from my personal docker hub (https://hub.docker.com/repository/docker/fntiks/nginx/general). I opened 4000-4001 ports. I ran this command in terminal: sudo docker run -d --restart always -p 4000:80 -p 4001:443 --name nginx-server fntiks/nginx:arm
+
+#LINK TO RUNNING app
+http://fnt.lt:4000/

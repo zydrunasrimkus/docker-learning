@@ -1,0 +1,19 @@
+#DOCKERFILE
+FROM golang:1.16.15-buster
+
+EXPOSE 8080
+
+WORKDIR /usr/src/app
+
+ENV PORT=8080
+
+ENV REQUEST_ORIGIN=http://localhost:5000
+
+COPY /material-applications/example-backend .
+
+RUN go build
+
+CMD [ "./server" ]
+
+#RUN COMMAND
+docker run -p 8080:8080 exback

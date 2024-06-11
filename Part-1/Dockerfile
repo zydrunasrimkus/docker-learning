@@ -1,9 +1,6 @@
-FROM ubuntu:22.04
+FROM nginx:latest
 
-WORKDIR /usr/src/app
+EXPOSE 80
+EXPOSE 443
 
-RUN apt-get -y update; apt-get -y install curl
-
-COPY script.sh .
-
-ENTRYPOINT [ "./script.sh" ]
+CMD ["nginx", "-g", "daemon off;"]
