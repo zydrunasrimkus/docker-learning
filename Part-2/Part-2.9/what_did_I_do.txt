@@ -1,0 +1,4 @@
+backend docker file removed port from
+ENV REQUEST_ORIGIN=http://localhost
+
+in nginx.conf file added /ping and /messages path
