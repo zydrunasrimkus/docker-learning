@@ -1,0 +1,2 @@
+Made express backend which automatically updates after a change.
+Made everything from scratch. Could not manage to make "node --watch" automatically update server files.
