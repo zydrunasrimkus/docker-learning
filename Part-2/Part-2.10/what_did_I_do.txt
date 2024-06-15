@@ -1,0 +1,3 @@
+Removed port 8080 from frontend docker file
+
+removed backend and frontend ports from docker-compose file

@@ -1,0 +1,15 @@
+FROM golang:1.16.15-buster
+
+EXPOSE 8080
+
+WORKDIR /usr/src/app
+
+ENV PORT=8080
+
+ENV REQUEST_ORIGIN=http://localhost
+
+COPY /material-applications/example-backend .
+
+RUN go build
+
+CMD [ "./server" ]
